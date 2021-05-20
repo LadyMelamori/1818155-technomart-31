@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Татьяна Бойченко](https://up.htmlacademy.ru/htmlcss/31/user/1818155).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
