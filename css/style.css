@@ -58,6 +58,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-third-transparent: rgba(0, 0, 0, 0.3);
   --basic-black-fourth-transparent: rgba(0, 0, 0, 0.25);
   --basic-black-almost-fourth-transparent: rgba(0, 0, 0, 0.24);
   --basic-black-sixth-transparent: rgba(0, 0, 0, 0.15);
@@ -68,6 +69,8 @@
 
   --basic-dark-red: #ca2c37;
   --basic-red: #ee3643;
+  --basic-dark-green: #367315;
+  --basic-darker-green: #518534;
   --basic-green: #63a63e;
 
   --basic-darkestgrey: #161d29;
@@ -83,10 +86,12 @@
   --basic-darkgreylight-third-transparent: rgba(169, 169, 169, 0.3);
   --basic-greylight: #c5c5c5;
   --basic-greylight-third-transparent: rgba(197, 197, 197, 0.3);
+  --basic-darklightgrey: #e5e5e5;
   --basic-lightgrey: #eaeaea;
   --basic-background: #f1f5f7;
   --basic-lighterbackground: #f3f7f9;
   --basic-beige: #f9f5f0;
+  --basic-darkbeige: #f7f3ec;
 
   --special-yellow: #ffbf47;
   --special-blue: #3bbce3;
@@ -122,13 +127,6 @@ img {
   height: auto;
 }
 
-.page-body h2 {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
 /* Button */
 
 .button {
@@ -149,6 +147,49 @@ img {
 
 .button:active {
   background-color: var(--error);
+}
+
+/* Common */
+
+.page-body h1,
+.page-body h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.page-body h1 {
+  background-color: var(--basic-background);
+}
+
+.products-item {
+  border: 1px solid var(--basic-lightgrey);
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.products-item:hover {
+  box-shadow: 0px 4px 20px var(--basic-black-sixth-transparent);
+}
+
+.products-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.products-item s {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-darkgreylight);
+}
+
+.price-button {
+  background: url("../img/icons/red-button.svg") no-repeat;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 /* Header */
@@ -172,6 +213,14 @@ img {
 
 .top-panel a:active {
   background-color: var(--basic-darkestgrey);
+}
+
+.top-panel .cart-full-link {
+  background-color: var(--basic-red);
+}
+
+.top-panel .cart-full-link:active {
+  background-color: var(--error);
 }
 
 .top-panel .place-order-link {
@@ -243,6 +292,31 @@ ul.auth {
 
 .auth-button:active {
   background-color: var(--basic-white);
+  color: var(--basic-greylight);
+}
+
+.authorized-button:hover,
+.authorized-button:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.authorized-button:active {
+  color: var(--basic-greylight);
+}
+
+.personal-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-darkgrey);
+}
+
+.personal-link:hover,
+.personal-link:focus {
+  color: var(--basic-red);
+}
+
+.personal-link:active {
   color: var(--basic-greylight);
 }
 
@@ -360,35 +434,6 @@ ul.auth {
   list-style: none;
 }
 
-.popular-products-item {
-  border: 1px solid var(--basic-lightgrey);
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
-.popular-products-item:hover {
-  box-shadow: 0px 4px 20px var(--basic-black-sixth-transparent);
-}
-
-.popular-products-item h3 {
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--basic-black);
-}
-
-.popular-products-item s {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  color: var(--basic-darkgreylight);
-}
-
-.price-button {
-  background: url("../img/icons/red-button.svg") no-repeat;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
 .popular-brands-list {
   list-style: none;
 }
@@ -465,6 +510,215 @@ ul.auth {
 
 .main-contacts p {
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+/* Catalog */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.filters {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.filters h2 {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-darkbeige);
+}
+
+.filters legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.price-filter-input {
+  background-color: var(--basic-darkbeige);
+  border: none;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.button-filters {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-darklightgrey);
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.button-filters:hover,
+.button-filters:focus {
+  background-color: var(--basic-white);
+  border-color: var(--basic-greylight);
+}
+
+.button-filters:active {
+  background-color: var(--basic-white);
+  border-color: var(--basic-red);
+}
+
+.sorting {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-darkbeige);
+}
+
+.sorting h2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-criteria-list a {
+  color: var(--basic-black-third-transparent);
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-criteria-list a:hover,
+.sorting-criteria-list a:focus,
+.sorting-criteria-list a:active {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-criteria-list .sorting-criteria-active,
+.sorting-criteria-list .sorting-criteria-active:hover,
+.sorting-criteria-list .sorting-criteria-active:focus,
+.sorting-criteria-list .sorting-criteria-active:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.sorting-direction-list a {
+  color: var(--basic-greylight);
+}
+
+.sorting-direction-list a:hover,
+.sorting-direction-list a:focus,
+.sorting-direction-list a:active {
+  color: var(--basic-black);
+}
+
+.sorting-direction-list .sorting-direction-active,
+.sorting-direction-list .sorting-direction-active:hover,
+.sorting-direction-list .sorting-direction-active:focus,
+.sorting-direction-list .sorting-direction-active:active {
+  color: var(--basic-red);
+}
+
+.catalog-product-list {
+  list-style: none;
+}
+
+.catalog-buy-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--basic-dark-green);
+  border-radius: 2px;
+}
+
+.catalog-buy-button:hover,
+.catalog-buy-button:focus {
+  background-color: var(--success);
+}
+
+.catalog-buy-button:active {
+  background-color: var(--basic-darker-green);
+}
+
+.catalog-bookmark-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+  color: var(--basic-darkgrey);
+}
+
+.catalog-bookmark-button:hover,
+.catalog-bookmark-button:focus {
+  background-color: var(--basic-white);
+  border-color: var(--basic-darkgrey);
+}
+
+.catalog-bookmark-button:active {
+  opacity: 0.5;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.button-pagination {
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-darklightgrey);
+  border-radius: 2px;
+  color: var(--basic-black);
+  font-size: 13px;
+}
+
+.button-pagination:hover,
+.button-pagination:focus {
+  background-color: var(--basic-white);
+  border-color: var(--basic-greylight);
+}
+
+.button-pagination:active {
+  background-color: var(--basic-white);
+  border-color: var(--basic-red);
+}
+
+.button-pagination-active,
+.button-pagination-active:hover,
+.button-pagination-active:focus,
+.button-pagination-active:active {
+  background-color: var(--basic-red);
+  border: none;
+  color: var(--basic-white);
+}
+
+.about-perforators {
+  background-color: var(--basic-background);
+}
+
+.about-perforators p {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.product-added-popup h2 {
+  font-size: 24px;
+}
+
+.button-continue,
+.button-continue:hover,
+.button-continue:focus,
+.button-continue:active {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 /* Footer */
