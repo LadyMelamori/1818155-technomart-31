@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт — Главная</title>
@@ -14,92 +14,96 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <section class="top-panel">
-        <h2>Поиск товаров и работа с корзиной</h2>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search">Поиск:</label>
-          <input id="search" type="text" name="search" placeholder="Поиск:">
-        </form>
-        <ul>
-          <li><a href="blank.html">Закладки: 0</a></li>
-          <li><a href="blank.html">Корзина: 0</a></li>
-          <li><a href="blank.html" class="place-order-link">Оформить заказ</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Контакты</h2>
-        <p class="company-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <p class="company-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-      </section>
-      <ul class="auth">
-        <li><a class="button auth-button" href="blank.html">Войти</a></li>
-        <li><a class="button auth-button" href="blank.html">Регистрация</a></li>
-      </ul>
-      <nav class="main-navigation">
-        <a>
-          <img class="main-header-logo" src="img/logo.svg" width="108" height="18" alt="Логотип магазина &quot;Техномарт&quot;">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="blank.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <section class="top-panel">
+          <div class="center">
+            <h2>Поиск товаров и работа с корзиной</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label for="search">Поиск:</label>
+              <input id="search" type="text" name="search" placeholder="Поиск:">
+            </form>
+            <ul>
+              <li><a href="blank.html">Закладки: 0</a></li>
+              <li><a href="blank.html">Корзина: 0</a></li>
+              <li><a href="blank.html" class="place-order-link">Оформить заказ</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="center header-columns">
+          <section class="header-contacts">
+            <h2>Контакты</h2>
+            <p class="company-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <p class="company-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          </section>
+          <ul class="auth">
+            <li><a class="button auth-button" href="blank.html">Войти</a></li>
+            <li><a class="button auth-button" href="blank.html">Регистрация</a></li>
+          </ul>
+        </div>
+        <nav class="main-navigation center">
+          <a>
+            <img class="main-header-logo" src="img/logo.svg" width="108" height="18" alt="Логотип магазина &quot;Техномарт&quot;">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Главная</a></li>
+            <li><a href="blank.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="blank.html">Спецпредложения</a></li>
+            <li><a href="blank.html">Доставка</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
     </header>
-    <main>
+    <main class="center">
       <h1>Магазин "Техномарт"</h1>
       <section class="features">
         <h2>Наши товары и услуги</h2>
         <ul class="features-list">
-          <li>
+          <li class="features-card">
             <h3>Материалы</h3>
             <a class="button features-button" href="blank.html">На любой вкус</a>
           </li>
-          <li>
+          <li class="features-card">
             <h3>Инструмент</h3>
             <a class="button features-button" href="blank.html">На все случаи</a>
           </li>
-          <li>
+          <li class="features-card">
             <h3>Техника</h3>
             <a class="button features-button" href="blank.html">Для стройки</a>
           </li>
-          <li>
+          <li class="features-card">
             <h3>Скидки 50%</h3>
             <a class="button features-button" href="blank.html">На 350 товаров</a>
           </li>
-          <li>
+          <li class="features-card">
             <h3>Доставка</h3>
             <a class="button features-button" href="blank.html">Бесплатно</a>
           </li>
-        </ul>
-      </section>
-      <section class="slider-element">
-        <h2>Перфораторы</h2>
-        <p>Настоящие мужские игрушки</p>
-        <img src="img/slider/perforators.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-        <button class="slider-arrow slider-arrow-back" type="button"></button>
-        <button class="slider-arrow slider-arrow-next" type="button"></button>
-        <a class="button" href="catalog.html">Открыть каталог</a>
-        <ul>
-          <li><button class="slider-dot slider-active-dot" type="button">.</button></li>
-          <li><button class="slider-dot" type="button">.</button></li>
-        </ul>
-      </section>
-      <section class="slider-element">
-        <h2>Дрели</h2>
-        <p>Соседям на радость!</p>
-        <img src="img/slider/drills.jpg" width="620" height="266" alt="Мужчина с дрелью">
-        <button class="slider-arrow slider-arrow-back" type="button"></button>
-        <button class="slider-arrow slider-arrow-next" type="button"></button>
-        <a class="button" href="catalog.html">Открыть каталог</a>
-        <ul>
-          <li><button class="slider-dot" type="button">.</button></li>
-          <li><button class="slider-dot slider-active-dot" type="button">.</button></li>
+          <li class="slider-element">
+            <h3>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/slider/perforators.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+            <button class="slider-arrow slider-arrow-back" type="button"></button>
+            <button class="slider-arrow slider-arrow-next" type="button"></button>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            <ul>
+              <li><button class="slider-dot slider-active-dot" type="button">.</button></li>
+              <li><button class="slider-dot" type="button">.</button></li>
+            </ul>
+          </li>
+          <li class="slider-element">
+            <h3>Дрели</h2>
+            <p>Соседям на радость!</p>
+            <img src="img/slider/drills.jpg" width="620" height="266" alt="Мужчина с дрелью">
+            <button class="slider-arrow slider-arrow-back" type="button"></button>
+            <button class="slider-arrow slider-arrow-next" type="button"></button>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            <ul>
+              <li><button class="slider-dot" type="button">.</button></li>
+              <li><button class="slider-dot slider-active-dot" type="button">.</button></li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section class="popular-products">
@@ -194,6 +198,7 @@
         <h2>Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!
+          <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="services-list">
@@ -229,77 +234,81 @@
           <a class="button" href="blank.html">Отправить заявку</a>
         </section>
       </section>
-      <section class="about-company">
-        <h2>Компания «Техномарт»</h2>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-        </p>
-        <p>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="blank.html">Подробнее о компании</a>
-      </section>
-      <section class="main-contacts">
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами,
-          заехав в наш офис:
-        </p>
-        <a href="https://yandex.ru/maps/-/CCUaJ8d0~D">
-          <img src="img/map.png" width="300" height="158" alt="Карта с адресом офиса: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
-        </a>
-        <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
-      </section>
+      <div class="index-columns">
+        <section class="about-company">
+          <h2>Компания «Техномарт»</h2>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <p>
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="blank.html">Подробнее о компании</a>
+        </section>
+        <section class="main-contacts">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами,
+            заехав в наш офис:
+          </p>
+          <a href="https://yandex.ru/maps/-/CCUaJ8d0~D">
+            <img src="img/map.png" width="300" height="158" alt="Карта с адресом офиса: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+          </a>
+          <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <img class="footer-logo" src="img/logo.svg" width="138" height="23" alt="Логотип магазина &quot;Техномарт&quot;">
-      <address class="footer-contacts">
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-      </address>
-      <ul class="footer-navigation">
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-        <li><a class="highlighted-link" href="blank.html">Материалы</a></li>
-        <li><a class="highlighted-link" href="blank.html">Техника</a></li>
-        <li><a class="highlighted-link" href="blank.html">Инструмент</a></li>
-        <li><a class="highlighted-link" href="blank.html">Спецпредложения</a></li>
-      </ul>
-      <div class="bottom-panel">
-        <p>
-          © 2010–2021 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-        <ul class="social-networks">
-          <li>
-            <a href="#"><img class="social-icon" src="img/icons/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-          </li>
-          <li>
-            <a href="#"><img class="social-icon" src="img/icons/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
-          </li>
-          <li>
-            <a href="#"><img class="social-icon" src="img/icons/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
-          </li>
-        </ul>
-        <address class="feedback-mail">
-          Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <div class="center">
+        <img class="footer-logo" src="img/logo.svg" width="138" height="23" alt="Логотип магазина &quot;Техномарт&quot;">
+        <address class="footer-contacts">
+          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
-        <p class="developed-by">
-          Разработано —
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+        <ul class="footer-navigation">
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+          <li><a class="highlighted-link" href="blank.html">Материалы</a></li>
+          <li><a class="highlighted-link" href="blank.html">Техника</a></li>
+          <li><a class="highlighted-link" href="blank.html">Инструмент</a></li>
+          <li><a class="highlighted-link" href="blank.html">Спецпредложения</a></li>
+        </ul>
+        <div class="bottom-panel">
+          <p>
+            © 2010–2021 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+          <ul class="social-networks">
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+            </li>
+          </ul>
+          <address class="feedback-mail">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+          <p class="developed-by">
+            Разработано —
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>
 
