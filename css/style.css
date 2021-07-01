@@ -169,6 +169,10 @@ img {
 
 /* Common */
 
+.hidden {
+  display: none;
+}
+
 .page-body h1,
 .page-body h2 {
   text-transform: uppercase;
@@ -217,9 +221,14 @@ img {
   margin-bottom: 59px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 21px;
+}
+
 .main-header .header-columns {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 40px;
 }
 
 .top-panel {
@@ -656,6 +665,8 @@ ul.auth {
 
 .about-company ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-company li {
@@ -668,8 +679,22 @@ ul.auth {
 
 /* Catalog */
 
+.catalog-top {
+  display: grid;
+}
+
+.catalog-top h1 {
+  padding: 29px 0 30px 29px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .breadcrumbs {
   list-style: none;
+  grid-row: 1 / 2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li {
@@ -681,11 +706,18 @@ ul.auth {
   color: var(--basic-black);
 }
 
+.catalog-center {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
 .filters {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 19px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
 }
 
 .filters h2 {
@@ -709,6 +741,8 @@ ul.auth {
 
 .filters ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .button-filters {
@@ -736,6 +770,7 @@ ul.auth {
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-darkbeige);
+  grid-column: 2 / -1;
 }
 
 .sorting h2 {
@@ -745,6 +780,8 @@ ul.auth {
 
 .sorting ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-criteria-list a {
@@ -786,6 +823,15 @@ ul.auth {
 
 .catalog-product-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / -1;
+  grid-row: 2 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 18px;
+  padding-bottom: 48px;
 }
 
 .catalog-buy-button {
@@ -824,6 +870,10 @@ ul.auth {
 
 .pagination {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / -1;
+  margin-bottom: 59px;
 }
 
 .button-pagination {
@@ -859,8 +909,19 @@ ul.auth {
   background-color: var(--basic-background);
 }
 
+.about-perforators h2 {
+  padding: 64px 0 25px 0;
+  margin: 0;
+}
+
 .about-perforators p {
   font-family: "PT Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-perforators p:last-child {
+  padding-bottom: 67px;
 }
 
 .product-added-popup h2 {
@@ -882,7 +943,7 @@ ul.auth {
   color: var(--basic-background);
 }
 
-.main-footer .center {
+.footer-top-wrapper {
   display: grid;
   grid-template-columns: 333px 1fr;
 }
@@ -935,6 +996,9 @@ ul.auth {
   font-size: 16px;
   line-height: 18px;
   grid-column: 1 / -1;
+}
+
+.bottom-panel-wrapper {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
 }
