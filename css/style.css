@@ -263,6 +263,7 @@ img {
 .main-header-logo {
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--basic-black-almost-fourth-transparent);
+  display: block;
   width: 108px;
   height: 18px;
   padding: 12px 57px 12px 55px;
@@ -279,10 +280,13 @@ img {
   display: flex;
 }
 
-.top-panel a {
+.top-panel a:not(.logo-link) {
   color: var(--basic-white);
   display: inline-block;
-  padding: 9px 0;
+  box-sizing: border-box;
+  width: 150px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .top-panel a:active {
@@ -290,13 +294,12 @@ img {
 }
 
 .top-panel .bookmarks-link {
-  padding-right: 26px;
-  padding-left: 48px;
+  padding-left: 43px;
 }
 
-.top-panel .cart-link {
-  padding-right: 25px;
-  padding-left: 43px;
+.top-panel .cart-link,
+.top-panel .cart-full-link {
+  padding-left: 47px;
 }
 
 .top-panel .cart-full-link {
@@ -309,7 +312,6 @@ img {
 
 .top-panel .place-order-link {
   background-color: var(--basic-green);
-  padding-right: 16px;
   padding-left: 19px;
 }
 
@@ -393,14 +395,19 @@ img {
   padding: 0;
   justify-self: right;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 300px;
 }
 
-.auth li {
+.inner-page .auth {
+  justify-content: center;
+}
+
+.auth .login-button {
+  width: 121px;
+  box-sizing: border-box;
   margin-right: 10px;
-}
-
-.auth li:last-of-type {
-  margin-right: 0;
 }
 
 .auth-button {
@@ -410,7 +417,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   padding: 12px 24px;
-  width: min-content;
+  width: max-content;
 }
 
 .auth-button:hover,
@@ -783,11 +790,14 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs li {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+  margin-right: 40px;
 }
 
 .breadcrumbs a {
@@ -806,18 +816,38 @@ img {
   line-height: 19px;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  width: 220px;
+  margin-right: 20px;
 }
 
 .filters h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-darkbeige);
+  padding: 10px 0px 10px 18px;
 }
 
 .filters legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filters .price-filter {
+  margin-bottom: 42px;
+}
+
+.price-filter legend {
+  margin-bottom: 10px;
 }
 
 .price-filter-input {
@@ -831,6 +861,38 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.filters li {
+  margin-bottom: 16px;
+}
+
+.filters li:last-of-type {
+  margin-bottom: 0;
+}
+
+.filters .brand-filter {
+  margin-bottom: 45px;
+}
+
+.brand-filter legend {
+  margin-bottom: 15px;
+}
+
+.filters .brand-filter {
+  margin-bottom: 45px;
+}
+
+.brand-filter legend {
+  margin-bottom: 15px;
+}
+
+.filters .power-type-filter {
+  margin-bottom: 34px;
+}
+
+.power-type-filter legend {
+  margin-bottom: 20px;
 }
 
 .button-filters {
@@ -859,6 +921,11 @@ img {
   line-height: 18px;
   background-color: var(--basic-darkbeige);
   grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
+  padding-right: 17px;
+  margin-bottom: 28px;
 }
 
 .sorting h2 {
@@ -870,6 +937,20 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.sorting .sorting-criteria-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 46px;
+  margin-left: auto;
+}
+
+.sorting-criteria-list li:first-of-type {
+  margin-right: 70px;
+}
+.sorting-criteria-list li:nth-of-type(2) {
+  margin-right: 65px;
 }
 
 .sorting-criteria-list a {
@@ -890,6 +971,12 @@ img {
 .sorting-criteria-list .sorting-criteria-active:active {
   color: var(--basic-red);
   border-bottom: none;
+}
+
+.sorting .sorting-direction-list {
+  display: flex;
+  width: 43px;
+  justify-content: space-between;
 }
 
 .sorting-direction-list a {
@@ -962,6 +1049,15 @@ img {
   padding: 0;
   grid-column: 2 / -1;
   margin-bottom: 59px;
+  display: flex;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination li:last-of-type {
+  margin-right: 0;
 }
 
 .button-pagination {
@@ -971,6 +1067,8 @@ img {
   border-radius: 2px;
   color: var(--basic-black);
   font-size: 13px;
+  width: min-content;
+  padding: 10px 15px;
 }
 
 .button-pagination:hover,

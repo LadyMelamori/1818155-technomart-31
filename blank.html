@@ -15,19 +15,19 @@
   <body class="page-body">
     <header class="main-header">
       <section class="top-panel">
-        <div class="center">
+        <div class="center top-panel-wrapper">
           <h2 class="visually-hidden">Поиск товаров и работа с корзиной</h2>
-          <a href="index.html">
+          <a class="logo-link" href="index.html">
             <img class="main-header-logo" src="img/logo.svg" width="108" height="18" alt="Логотип магазина &quot;Техномарт&quot;">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search">Поиск:</label>
+            <label class="visually-hidden" for="search">Поиск:</label>
             <input id="search" type="text" name="search" placeholder="Поиск:">
           </form>
-          <ul>
-            <li><a href="blank.html">Закладки: 0</a></li>
-            <li><a href="blank.html">Корзина: 0</a></li>
-            <li><a href="blank.html" class="place-order-link">Оформить заказ</a></li>
+          <ul class="top-panel-links">
+            <li><a class="bookmarks-link" href="blank.html">Закладки: 0</a></li>
+            <li><a class="cart-link" href="blank.html">Корзина: 0</a></li>
+            <li><a class="place-order-link" href="blank.html">Оформить заказ</a></li>
           </ul>
         </div>
       </section>
@@ -39,7 +39,7 @@
           <p class="company-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </section>
         <ul class="auth">
-          <li><a class="button auth-button" href="blank.html">Войти</a></li>
+          <li><a class="button auth-button login-button" href="blank.html">Войти</a></li>
           <li><a class="button auth-button" href="blank.html">Регистрация</a></li>
         </ul>
       </div>
@@ -74,38 +74,39 @@
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Контакты</a></li>
-          <li><a class="highlighted-link" href="blank.html">Материалы</a></li>
-          <li><a class="highlighted-link" href="blank.html">Техника</a></li>
-          <li><a class="highlighted-link" href="blank.html">Инструмент</a></li>
-          <li><a class="highlighted-link" href="blank.html">Спецпредложения</a></li>
         </ul>
-        </div>
-        <div class="bottom-panel">
-          <div class="center bottom-panel-wrapper">
-            <p>
-              © 2010–2021 Компания «Техномарт»<br>
-              Все права защищены
-            </p>
-            <ul class="social-networks">
-              <li>
-                <a href="#"><img class="social-icon" src="img/icons/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-              </li>
-              <li>
-                <a href="#"><img class="social-icon" src="img/icons/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
-              </li>
-              <li>
-                <a href="#"><img class="social-icon" src="img/icons/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
-              </li>
-            </ul>
-            <address class="feedback-mail">
-              Обратная связь:
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </address>
-            <p class="developed-by">
-              Разработано —
-              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
-          </div>
+        <ul class="footer-featured-navigation">
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="bottom-panel">
+        <div class="center bottom-panel-wrapper">
+          <p class="copyright">
+            © 2010–2021 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+          <ul class="social-networks">
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="img/icons/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+            </li>
+          </ul>
+          <address class="feedback-mail">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+          <p class="developed-by">
+            Разработано —
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
         </div>
       </div>
     </footer>
