@@ -216,6 +216,7 @@ img {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  min-height: 318px;
 }
 
 .products-item:hover {
@@ -935,6 +936,7 @@ img {
   height: 266px;
   box-sizing: border-box;
   display: none;
+  background-size: cover;
 }
 
 .slider-element-active {
@@ -962,8 +964,12 @@ img {
 .slider-element p {
   font-size: 18px;
   margin: 0;
-  margin-bottom: 113px;
   padding: 0;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 27px;
 }
 
 .slider-arrow {
@@ -1221,10 +1227,11 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 31px;
+  max-width: 300px;
 }
 
 .service-item-description-text {
-  width: 300px;
+  max-width: 300px;
 }
 
 .apply-for-credit-button {
@@ -1240,9 +1247,12 @@ img {
   margin-bottom: 70px;
 }
 
+.about-company {
+  padding-right: 150px;
+}
+
 .about-company p {
   font-family: "PT Sans", "Arial", sans-serif;
-  width: 460px;
 }
 
 .about-company ul {
@@ -1274,6 +1284,12 @@ img {
 
 .main-contacts p {
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.main-contacts img {
+  width: 300px;
+  height: 158px;
+  object-fit: contain;
 }
 
 .main-contacts .button {
@@ -2018,6 +2034,7 @@ img {
   padding: 0;
   margin-left: 70px;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 34px;
 }
 
@@ -2076,8 +2093,15 @@ img {
 /* Popup common */
 
 .popup {
+  display: none;
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   box-shadow: 0px 4px 20px var(--basic-black-sixth-transparent);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -2101,7 +2125,6 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .button-close::before {
@@ -2118,14 +2141,21 @@ img {
 
 /* Map popup */
 .map-popup {
-  width: 940px;
+  width: 943px;
   height: 449px;
+  bottom: 333px;
+  top: auto;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 /* Feedback form */
 .feedback-popup {
   width: 620px;
-  height: 430px;
+  bottom: 352px;
+  top: auto;
   box-sizing: border-box;
 }
 
