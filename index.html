@@ -375,32 +375,36 @@
       </div>
     </footer>
 
-    <section class="feedback-popup visually-hidden">
-      <h2>Форма обратной связи</h2>
+    <section class="popup feedback-popup visually-hidden">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="contact-name">Ваше имя:</label>
-          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="contact-email">Ваш e-mail:</label>
-          <input id="contact-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="contact-text">Текст письма:</label>
-          <textarea id="contact-text" name="text" rows="4" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
+        <div class="form-fields-wrapper">
+          <p class="feedback-form-item feedback-form-input-item">
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-form-item feedback-form-input-item">
+            <label for="contact-email">Ваш e-mail:</label>
+            <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="feedback-form-item feedback-form-textarea-item">
+            <label for="contact-text">Текст письма:</label>
+            <textarea id="contact-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="feedback-submit-button-wrapper">
+          <button class="button submit-feedback-button" type="submit">Отправить</button>
+        </div>
       </form>
-      <button class="button button-close" type="button">Закрыть</button>
+      <button class="button button-close" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <section class="visually-hidden">
-      <h2>Как до нас добраться</h2>
+    <section class="popup map-popup visually-hidden">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <a href="https://yandex.ru/maps/-/CCUaJ8d0~D">
         <img src="img/map-popup.png" width="970" height="477" alt="Карта с адресом офиса: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
       </a>
-      <button class="button button-close" type="button">Закрыть</button>
+      <button class="button button-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
