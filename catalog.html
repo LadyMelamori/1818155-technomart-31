@@ -37,7 +37,7 @@
       <div class="center header-columns">
         <section class="header-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="company-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="company-description">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
           <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <p class="company-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </section>
@@ -59,8 +59,8 @@
               &nbsp
             </a>
           </li>
-          <li><a class="personal-link my-orders-link" href="blank.html">Мои заказы</a></li>
-          <li><a class="personal-link" href="blank.html">Личный кабинет</a></li>
+          <li class="personal-link-list-item"><a class="personal-link my-orders-link" href="blank.html">Мои заказы</a></li>
+          <li class="personal-link-list-item"><a class="personal-link" href="blank.html">Личный кабинет</a></li>
         </ul>
       </div>
       <div class="center">
@@ -103,10 +103,10 @@
                     "></div>
                     </div>
                     <div class="toggle toggle-min" tabindex="0"style="
-                    left: 5%
+                    left: 9%
                   "></div>
                     <div class="toggle toggle-max" tabindex="0"style="
-                    left: 70%
+                    left: 73%
                   "></div>
                   </div>
                   <div class="price-controls">
@@ -322,7 +322,7 @@
               <a class="button button-pagination" href="#">3</a>
             </li>
             <li>
-              <a class="button button-pagination" href="#">Следующая</a>
+              <a class="button button-pagination button-pagination-next" href="#">Следующая</a>
             </li>
           </ul>
         </div>
@@ -331,7 +331,7 @@
         <div class="center">
           <h2>Пара слов о перфораторах</h2>
           <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Перфоратор &ndash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           </p>
           <p>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -385,20 +385,20 @@
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </address>
           <p class="developed-by">
-            Разработано —
+            Разработано&nbsp;&ndash;&nbsp;
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
     </footer>
 
-    <section class="popup product-added-popup visually-hidden">
+    <section class="popup product-added-popup">
       <h2>Товар добавлен в корзину!</h2>
       <div class="product-added-buttons-wrapper">
         <a class="button" href="blank.html">Оформить заказ</a>
         <button class="button button-continue" type="button">Продолжить покупки</button>
       </div>
-      <button class="button button-close" type="button">Закрыть</button>
+      <button class="button button-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
