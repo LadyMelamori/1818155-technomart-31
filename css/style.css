@@ -106,6 +106,9 @@
   --success: #5fbb2d;
   --warning: #ffbf47;
   --error: #ba2732;
+
+  --special-slider-drills: #9F786B;
+  --special-slider-perforators: #867560;
 }
 
 /* Global */
@@ -956,10 +959,12 @@ img {
 
 
 .slider-element-perforators {
+  background-color: var(--special-slider-perforators);
   background: var(--basic-background) url("../img/slider/perforators.jpg") no-repeat;
 }
 
 .slider-element-drills {
+  background-color: var(--special-slider-drills);
   background: var(--basic-background) url("../img/slider/drills.jpg") no-repeat;
 }
 
@@ -1716,6 +1721,7 @@ img {
 
 .price-controls span {
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   text-align: center;
 }
