@@ -1479,7 +1479,10 @@ img {
 
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox + label:focus::before,
-.filter-input-checkbox + label:active::before {
+.filter-input-checkbox + label:active::before,
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:active + label::before {
   content: "";
   position: absolute;
   left: -37px;
@@ -1494,7 +1497,10 @@ img {
 .filter-input-checkbox:disabled + label::before,
 .filter-input-checkbox:disabled + label:hover::before,
 .filter-input-checkbox:disabled + label:focus::before,
-.filter-input-checkbox:disabled + label:active::before {
+.filter-input-checkbox:disabled + label:active::before,
+.filter-input-checkbox:disabled:hover + label::before,
+.filter-input-checkbox:disabled:focus + label::before,
+.filter-input-checkbox:disabled:active + label::before {
   content: "";
   position: absolute;
   left: -37px;
@@ -1510,7 +1516,10 @@ img {
 .filter-input-checkbox:disabled + label,
 .filter-input-checkbox:disabled + label:hover,
 .filter-input-checkbox:disabled + label:focus,
-.filter-input-checkbox:disabled + label:active {
+.filter-input-checkbox:disabled + label:active,
+.filter-input-checkbox:disabled:hover + label,
+.filter-input-checkbox:disabled:focus + label,
+.filter-input-checkbox:disabled:active + label {
   opacity: 0.4;
   cursor: not-allowed;
 }
@@ -1529,7 +1538,10 @@ img {
 
 .filter-input-checkbox:checked + label:hover::before,
 .filter-input-checkbox:checked + label:focus::before,
-.filter-input-checkbox:checked + label:active::before {
+.filter-input-checkbox:checked + label:active::before,
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:checked:focus + label::before,
+.filter-input-checkbox:checked:active + label::before {
   content: "";
   position: absolute;
   left: -37px;
@@ -1544,7 +1556,10 @@ img {
 .filter-input-checkbox:checked:disabled + label::before,
 .filter-input-checkbox:checked:disabled + label:hover::before,
 .filter-input-checkbox:checked:disabled + label:focus::before,
-.filter-input-checkbox:checked:disabled + label:active::before {
+.filter-input-checkbox:checked:disabled + label:active::before,
+.filter-input-checkbox:checked:disabled:hover + label::before,
+.filter-input-checkbox:checked:disabled:focus + label::before,
+.filter-input-checkbox:checked:disabled:active + label::before {
   content: "";
   position: absolute;
   left: -37px;
@@ -1560,7 +1575,10 @@ img {
 .filter-input-checkbox:checked:disabled + label,
 .filter-input-checkbox:checked:disabled + label:hover,
 .filter-input-checkbox:checked:disabled + label:focus,
-.filter-input-checkbox:checked:disabled + label:active {
+.filter-input-checkbox:checked:disabled + label:active,
+.filter-input-checkbox:checked:disabled:hover + label,
+.filter-input-checkbox:checked:disabled:focus + label,
+.filter-input-checkbox:checked:disabled:active + label {
   opacity: 0.4;
   cursor: not-allowed;
 }
@@ -1579,7 +1597,10 @@ img {
 
 .filter-input-radio + label:hover::before,
 .filter-input-radio + label:focus::before,
-.filter-input-radio + label:active::before {
+.filter-input-radio + label:active::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:active + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1594,7 +1615,10 @@ img {
 .filter-input-radio:disabled + label::before,
 .filter-input-radio:disabled + label:hover::before,
 .filter-input-radio:disabled + label:focus::before,
-.filter-input-radio:disabled + label:active::before {
+.filter-input-radio:disabled + label:active::before,
+.filter-input-radio:disabled:hover + label::before,
+.filter-input-radio:disabled:focus + label::before,
+.filter-input-radio:disabled:active + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1610,7 +1634,10 @@ img {
 .filter-input-radio:disabled + label,
 .filter-input-radio:disabled + label:hover,
 .filter-input-radio:disabled + label:focus,
-.filter-input-radio:disabled + label:active {
+.filter-input-radio:disabled + label:active,
+.filter-input-radio:disabled:hover + label,
+.filter-input-radio:disabled:focus + label,
+.filter-input-radio:disabled:active + label {
   opacity: 0.4;
   cursor: not-allowed;
 }
@@ -1629,7 +1656,10 @@ img {
 
 .filter-input-radio:checked + label:hover::before,
 .filter-input-radio:checked + label:focus::before,
-.filter-input-radio:checked + label:active::before {
+.filter-input-radio:checked + label:active::before,
+.filter-input-radio:checked:hover + label::before,
+.filter-input-radio:checked:focus + label::before,
+.filter-input-radio:checked:active + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1644,7 +1674,10 @@ img {
 .filter-input-radio:checked:disabled + label::before,
 .filter-input-radio:checked:disabled + label:hover::before,
 .filter-input-radio:checked:disabled + label:focus::before,
-.filter-input-radio:checked:disabled + label:active::before {
+.filter-input-radio:checked:disabled + label:active::before,
+.filter-input-radio:checked:disabled:hover + label::before,
+.filter-input-radio:checked:disabled:focus + label::before,
+.filter-input-radio:checked:disabled:active + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1660,7 +1693,10 @@ img {
 .filter-input-radio:checked:disabled + label,
 .filter-input-radio:checked:disabled + label:hover,
 .filter-input-radio:checked:disabled + label:focus,
-.filter-input-radio:checked:disabled + label:active {
+.filter-input-radio:checked:disabled + label:active,
+.filter-input-radio:checked:disabled:hover + label,
+.filter-input-radio:checked:disabled:focus + label,
+.filter-input-radio:checked:disabled:active + label {
   opacity: 0.4;
   cursor: not-allowed;
 }
