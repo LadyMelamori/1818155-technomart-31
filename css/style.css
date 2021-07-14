@@ -167,6 +167,9 @@ img {
   width: 192px;
   padding-top: 11px;
   padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -367,7 +370,7 @@ img {
   font-weight: bold;
   margin-bottom: 21px;
   width: max-content;
-  max-width: 100px;
+  max-width: 176px;
   padding: 10px 43px 10px 33px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -660,6 +663,11 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 300px;
+  height: min-content;
+}
+
+.auth li {
+  display: flex;
 }
 
 .inner-page .auth {
@@ -686,6 +694,14 @@ img {
 .auth-button:active {
   background-color: var(--basic-white);
   color: var(--basic-greylight);
+}
+
+.login-button {
+  max-width: 121px;
+}
+
+.register-button {
+  max-width: 150px;
 }
 
 .login-button {
@@ -1907,16 +1923,22 @@ img {
 .sorting .sorting-criteria-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-right: 46px;
   margin-left: auto;
 }
 
-.sorting-criteria-list li:first-of-type {
-  margin-right: 70px;
+.sorting-criteria-list li {
+  margin-right: 45px;
+  margin-left: 20px;
 }
-.sorting-criteria-list li:nth-of-type(2) {
-  margin-right: 65px;
+
+.sorting-criteria-list li:first-of-type {
+  margin-right: 50px;
+}
+
+.sorting-criteria-list li:last-child {
+  margin-right: 0;
 }
 
 .sorting-criteria-list a {
@@ -2174,18 +2196,21 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 75px;
+  margin-right: 31px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
+  justify-self: center;
 }
 
 .social-networks li {
   margin-right: 1px;
+  margin-bottom: 5px;
 }
 
 .social-networks li:last-of-type {
   margin-right: 0;
+  margin-bottom: 29px;
 }
 
 .social-button {
