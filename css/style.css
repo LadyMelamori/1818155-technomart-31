@@ -615,7 +615,7 @@ img {
 
 .company-phone {
   background-color: var(--basic-lighterbackground);
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--basic-white);
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
