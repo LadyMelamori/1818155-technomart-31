@@ -2305,6 +2305,15 @@ img {
   background-position: 0 0;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /* Map popup */
 .map-popup {
   width: 943px;
@@ -2440,4 +2449,46 @@ img {
 .button-continue:active {
   background-color: var(--basic-white);
   color: var(--basic-black);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%) translateY(-2000px);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) translateY(30px);
+  }
+
+  90% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-50%, -50%) translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-50%, -50%) translateX(10px);
+  }
 }

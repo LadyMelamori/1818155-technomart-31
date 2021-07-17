@@ -320,10 +320,10 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <a href="https://yandex.ru/maps/-/CCUaJ8d0~D">
+          <a class="clickable-map" href="https://yandex.ru/maps/-/CCUaJ8d0~D">
             <img src="img/map.png" width="300" height="158" alt="Карта с адресом офиса: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
           </a>
-          <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
+          <a class="button feedback-button" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -383,15 +383,15 @@
         <div class="form-fields-wrapper">
           <p class="feedback-form-item feedback-form-input-item">
             <label for="contact-name">Ваше имя:</label>
-            <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="contact-name" id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="feedback-form-item feedback-form-input-item">
             <label for="contact-email">Ваш e-mail:</label>
-            <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+            <input class="contact-email" id="contact-email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p class="feedback-form-item feedback-form-textarea-item">
             <label for="contact-text">Текст письма:</label>
-            <textarea id="contact-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea class="contact-text" id="contact-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="feedback-submit-button-wrapper">
@@ -406,5 +406,10 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.4156471794626!2d30.317399988898543!3d59.96812190468482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2sNaberezhnaya%20Reki%20Karpovki%2C%205%D0%9F%2C%20Sankt-Peterburg%2C%20197022!5e0!3m2!1sen!2sru!4v1625689066544!5m2!1sen!2sru" width="943" height="449" allowfullscreen title="Карта с адресом офиса: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></iframe>
       <button class="button button-close" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/popup-feedback.min.js"></script>
+    <script src="js/popup-map.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/services.min.js"></script>
   </body>
 </html>
